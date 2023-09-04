@@ -1,3 +1,13 @@
+/*!  
+  
+Theme Name: GETHA-theme-wordpress  
+Description: Thème WordPress custom pour Prénom Nom  
+Version: 1.0  
+Author: Prénom Nom  
+Author URI: github.com/Milyra35 
+  
+*/
+
 body {
     padding:0;
     margin:0;
@@ -11,4 +21,14 @@ header {
 
 header nav ul {
     list-style: none;
+    display:flex;
+    align-items:center;
+    padding:0;
+    margin:0;
+}
+
+header nav ul li a {
+    margin: 0 1rem;
+    text-decoration:none;
+    color: black;
 }
