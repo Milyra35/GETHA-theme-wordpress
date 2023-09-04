@@ -1,8 +1,3 @@
-<?php  
-	$menuItems = getNavigationMenu();
-    $data = getHomepageData(); 
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -21,10 +16,8 @@
         <?php get_header();?>
 
         <main>
-            <section id="about">
-                <h2><?= $data['a-propos']['titre'];?></h2>
-                <p><?= $data['a-propos']['contenu'];?></p>
-                <a href="<?= $menuItems[4]->url;?>">En savoir plus</a>
+            <section id="posts">
+                <h2>Articles</h2>
             </section>
         </main>
 
