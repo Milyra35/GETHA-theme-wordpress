@@ -1,0 +1,1 @@
+# GETHA-theme-wordpress
