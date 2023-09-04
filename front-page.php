@@ -1,5 +1,6 @@
 <?php  
-	$menuItems = getNavigationMenu();  
+	$menuItems = getNavigationMenu();
+    $data = getHomepageData(); 
 ?>
 
 <!DOCTYPE html>
@@ -17,24 +18,16 @@
         <title><?php echo get_bloginfo( 'name' );?></title>
 	</head>
 	<body>
-        <header>
-            <h1>GETHA</h1>
-            <nav>
-                <ul>
-                    <?php
-                        foreach($menuItems as $item)
-                        {
-                    ?>
-                    <li>
-                        <a href="<?= $item->url ?>"><?= $item->title ?></a>
-                    </li>            
-                    <?php
-                        }
-                    ?>
-                </ul>
-            </nav>
-        </header>
+        <?php get_header();?>
 
-		<!-- <?php wp_footer(); ?> -->
+        <main>
+            <section id="about">
+                <h2><?= $data['a-propos']['titre'];?></h2>
+                <p><?= $data['a-propos']['contenu'];?></p>
+                <a href="<?= $menuItems[4]->url;?>">En savoir plus</a>
+            </section>
+        </main>
+
+		
 	</body>
 </html>

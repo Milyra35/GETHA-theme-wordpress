@@ -3,7 +3,7 @@
 Theme Name: GETHA-theme-wordpress  
 Description: Thème WordPress custom pour Prénom Nom  
 Version: 1.0  
-Author: Prénom Nom  
+Author: Marie Richir
 Author URI: github.com/Milyra35 
   
 */
@@ -19,10 +19,18 @@ header {
     display: flex;
 }
 
+.hidden {
+    display:none;
+}
+
+header nav {
+    display:flex;
+    align-items: center;
+}
+
 header nav ul {
     list-style: none;
     display:flex;
-    align-items:center;
     padding:0;
     margin:0;
 }
