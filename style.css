@@ -55,3 +55,14 @@ header nav ul li a:hover {
     color: #FFFCF5;
     border-radius: 10px;
 }
+
+
+
+/**** POSTS ****/
+main {
+    max-width: 80vw;
+}
+
+.posts {
+    display:flex;
+}
