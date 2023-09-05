@@ -1,5 +1,9 @@
 <?php
 
+global $post;  
+$post_title = $post->post_title;  
+$thumbnail = get_the_post_thumbnail_url($post);
+
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +26,11 @@
         <main>
             <section id="posts">
                 <h2>Articles</h2>
+
+                <?php
+                    
+                ?>
+
             </section>
         </main>
 
