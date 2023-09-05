@@ -13,10 +13,17 @@ body {
     margin:0;
     font-family: sans-serif;
     box-sizing: border-box;
+    color: #001E2F;
+    background-color: #FFFCF5;
 }
 
 header {
-    display: flex;
+    display:flex;
+    justify-content:center;
+}
+
+header section img {
+    width: 60%;
 }
 
 .hidden {
@@ -36,7 +43,15 @@ header nav ul {
 }
 
 header nav ul li a {
-    margin: 0 1rem;
+    margin: 0 2rem;
+    padding: 0.6rem 1.2rem;
     text-decoration:none;
-    color: black;
+    color: #001E2F;
+    font-size: 1.3rem;
+}
+
+header nav ul li a:hover {
+    background-color: #9F2020;
+    color: #FFFCF5;
+    border-radius: 10px;
 }
