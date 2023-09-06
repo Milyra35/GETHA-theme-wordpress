@@ -21,6 +21,13 @@ function getNavigationMenu()
     return $items;
 }
 
+function getFooterMenu()
+{
+    $items = wp_get_nav_menu_items('Footer');
+
+    return $items;
+}
+
 function getHomepageData() 
 {
     $data = [];
