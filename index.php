@@ -23,8 +23,8 @@ $posts = getPosts();
         <?php get_header();?>
 
         <main>
+            <h2>Articles</h2>
             <section class="posts">
-                <h2>Articles</h2>
 
                 <?php
                     foreach($posts as $item)
@@ -37,6 +37,7 @@ $posts = getPosts();
                                 <h3>'.$post->post_title.'</h3>
                                 <img src='.$image["url"].' alt='.$image['alt'].'>
                                 <p>'.wp_trim_words($post->post_content, 15).'</p>
+                                <a href="'.$post->guid.'">En savoir plus</a>
                             </article>
                         ';
                     }

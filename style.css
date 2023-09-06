@@ -17,6 +17,18 @@ body {
     background-color: #FFFCF5;
 }
 
+main {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+main h2 {
+    font-size:1.8rem;
+    margin-top: 2.5rem;
+}
+
+
+/**** HEADER ****/
 header {
     display:flex;
     justify-content:center;
@@ -57,12 +69,32 @@ header nav ul li a:hover {
 }
 
 
-
 /**** POSTS ****/
-main {
-    max-width: 80vw;
-}
-
 .posts {
     display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.posts .post {
+    width: 30%;
+    height: auto;
+    padding: .5rem;
+    border: 1px solid #9F2020;
+    border-radius: 10px;
+    display:grid;
+}
+
+.posts .post img {
+    width: 100%;
+}
+
+.posts .post a {
+    text-decoration: none;
+    color: #FFFCF5;
+    background-color:#9F2020;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    width: fit-content;
+    align-self: self-end;
 }
