@@ -4,6 +4,7 @@ add_theme_support('post-thumbnails');
 add_theme_support( 'responsive-embeds' );
 add_theme_support( 'editor-styles' );
 add_theme_support( 'post-formats',  array( 'aside', 'gallery', 'quote', 'image', 'video' ) );
+add_filter('wpcf7_autop_or_not', '__return_false');
 
 function register_my_menus() 
 { 
@@ -35,6 +36,7 @@ function getHomepageData()
     $data['a-propos']['titre'] = get_field('titre_a_propos');
     $data['a-propos']['contenu'] = get_field('contenu_a_propos');
     $data['articles'] = getPosts();
+    $data['evenements'] = getEvents();
 
     return $data;
 }
@@ -80,6 +82,16 @@ function getPosts()
     }
 
     return $articles;
+}
+
+function getEvents()
+{
+    $events = tribe_get_events(array(
+        'events' => -1,
+        'start_date' => date('Y-m-d')
+    ));
+
+    return $events;
 }
 
 ?>
