@@ -2,9 +2,8 @@
 /*
 Template Name: Actualités
 */
-  
-	$menuItems = getNavigationMenu();
-    $posts = getPosts();
+
+$posts = getPosts();
 ?>
 
 <?php get_header();?>
