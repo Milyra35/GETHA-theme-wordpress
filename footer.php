@@ -16,6 +16,9 @@
                     <?php
                         }
                     ?>
+                    <li>
+                        <a href="https://github.com/Milyra35" target="_blank">Marie Richir</a>
+                    </li>
                 </ul>
             </nav>
         </footer>

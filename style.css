@@ -8,30 +8,42 @@ Author URI: github.com/Milyra35
   
 */
 
+html {
+    margin-top : 0 !important;
+}
+
 body {
     padding:0;
     margin:0;
-    font-family: sans-serif;
+    font-family: "Raleway", sans-serif;
     box-sizing: border-box;
     color: #001E2F;
-    background-color: #FFFCF5;
+    background-color: #FCFCFC;
 }
 
 main {
-    max-width: 80vw;
+    max-width: 70vw;
     margin: 0 auto;
 }
 
 main h2 {
     font-size:1.8rem;
     margin-top: 2.5rem;
+    font-weight: 500;
 }
 
 
 /**** HEADER ****/
+header {
+    background-color: #FC9056;
+}
+
 header span {
+    max-width: 70vw;
+    margin: 0 auto;
     display:flex;
-    justify-content:center;
+    justify-content: space-between;
+    padding: .5rem 0;
 }
 
 header span section img {
@@ -55,7 +67,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    margin: 0 2rem;
+    margin: 0 1rem;
     padding: 0.6rem 1.2rem;
     text-decoration:none;
     color: #001E2F;
@@ -63,8 +75,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #9F2020;
-    color: #FFFCF5;
+    background-color: #FCFCFC;
     border-radius: 10px;
 }
 
@@ -91,7 +102,7 @@ header nav ul li a:hover {
 
 .posts .post a {
     text-decoration: none;
-    color: #FFFCF5;
+    color: #FCFCFC;
     background-color:#9F2020;
     padding: .5rem 1rem;
     border-radius: 10px;
@@ -108,10 +119,68 @@ header nav ul li a:hover {
 
 .contact form {
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items:center;
+    width: 30rem;
 }
 
-.contact form input {
+.contact form label {
+    margin: 1rem 0;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact form label input {
     justify-self: flex-end;
+    padding: .5rem;
+    align-self: flex-end;
+    width: 15rem;
+    border-radius: 10px;
+    border:none;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.contact form label textarea {
+    padding: .5rem;
+    width: 15rem;
+    border-radius: 10px;
+    border:none;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.contact form .wpcf7-submit {
+    border:none;
+    background-color: #136B76;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    color:#FCFCFC;
+    font-size: 1.1rem;
+}
+
+
+/**** FOOTER ****/
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color:#FC9056;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer nav {
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+footer nav ul {
+    display:flex;
+    justify-content:space-between;
+}
+
+footer nav ul li a {
+    text-decoration:none;
+    color:#001E2F;
 }
