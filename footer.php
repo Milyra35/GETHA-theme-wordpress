@@ -4,6 +4,7 @@
 
         <footer>
             <nav>
+                <h2 class="hidden">Navigation bas de page</h2>
                 <ul>
                     <?php
                         foreach($footerItems as $item)
