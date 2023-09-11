@@ -24,6 +24,7 @@ body {
 main {
     max-width: 70vw;
     margin: 0 auto;
+    min-height: 80vh;
 }
 
 main h2 {
@@ -85,21 +86,35 @@ header nav ul li a:hover {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 .posts .post {
     width: 30%;
-    height: auto;
-    padding: .5rem;
+    height: fit-content;
+    padding: .6rem;
+    margin-bottom: 1rem;
     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
 
+.posts .post h3 {
+    font-size: 1.4rem;
+}
+
 .posts .post img {
     width: 100%;
+    margin: 1rem 0;
+}
+
+.posts .post p:first-of-type {
+    margin: 1.3rem 0;
+}
+
+.posts .post p:nth-of-type(2) {
+    margin: 1.3rem 0;
 }
 
 .posts .post a {
@@ -108,7 +123,13 @@ header nav ul li a:hover {
     background-color:#432143;
     padding: .5rem 1rem;
     border-radius: 10px;
-    width: fit-content;
+    text-align: center;
+    border: 1px solid #432143;
+}
+
+.posts .post a:hover {
+    background-color: #FCFCFC;
+    color:#001E2F;
 }
 
 
