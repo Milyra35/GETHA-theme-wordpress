@@ -8,22 +8,24 @@ $thumbnail = get_the_post_thumbnail_url($post);
 <?php get_header();?>
 
 <main>
-	<figure>
-		<img src="<?= $thumbnail;?>" alt=""/>
-	</figure>
-	<section>
-		<h2><?= $post_title;?></h2>
-		<?php
-			if (have_posts()) :  
-				while (have_posts()) :
-					the_post();  
-					the_content();  
-				endwhile;  
-			else :  
-				echo 'Nothing found';  
-			endif;
-		?>
-	</section>
+	<article class="single-post">
+		<figure>
+			<img src="<?= $thumbnail;?>" alt=""/>
+		</figure>
+		<section>
+			<h2><?= $post_title;?></h2>
+			<?php
+				if (have_posts()) :  
+					while (have_posts()) :
+						the_post();  
+						the_content();  
+					endwhile;  
+				else :  
+					echo 'Nothing found';  
+				endif;
+			?>
+		</section>
+	</article>
 </main>
 
 <?php get_footer();?>
