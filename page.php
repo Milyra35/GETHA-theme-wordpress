@@ -7,11 +7,10 @@
 <?php get_header();?>
 
 <main>
-	<h2><?php the_title();?></h2>
-
-	<section class="backgorund">
+	<section class="background">
+		<h3 class="hidden">Texte à propos</h3>
 		<article class="about" id="about">
-			<h3 class="hidden">Texte à propos</h3>
+			<h2><?php the_title();?></h2>
 			<p>
 				<?= $data['a-propos']['all-content']; ?>
 			</p>
