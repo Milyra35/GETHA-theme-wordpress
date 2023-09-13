@@ -7,10 +7,13 @@
 <?php get_header();?>
 
 <main>
-	<section id="about">
+	<section id="homepage-about" class="homepage-about">
 		<h2><?= $data['a-propos']['titre'];?></h2>
-		<p><?= $data['a-propos']['contenu'];?></p>
-		<a href="<?= $menuItems[4]->url;?>">En savoir plus</a>
+
+		<article class="text-about">
+			<p><?= $data['a-propos']['contenu'];?></p>
+			<a href="<?= $menuItems[3]->url;?>">En savoir plus</a>
+		</article>
 	</section>
 </main>
 

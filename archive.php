@@ -14,7 +14,8 @@ Template Name: Actualités
     <h2><?php the_title();?></h2>
 
     <section class="posts">
-
+        <h3 class="hidden">Tous les articles</h3>
+        
         <?php
             foreach($posts as $item)
             {

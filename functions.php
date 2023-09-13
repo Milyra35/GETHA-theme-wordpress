@@ -35,6 +35,7 @@ function getHomepageData()
     $data['a-propos'] = [];
     $data['a-propos']['titre'] = get_field('titre_a_propos');
     $data['a-propos']['contenu'] = get_field('contenu_a_propos');
+    $data['a-propos']['all-content'] = get_field('a_propos');
     $data['articles'] = getPosts();
     $data['evenements'] = getEvents();
 

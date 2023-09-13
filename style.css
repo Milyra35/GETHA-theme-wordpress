@@ -23,7 +23,7 @@ body {
 
 main {
     max-width: 70vw;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     min-height: 80vh;
 }
 
@@ -49,6 +49,12 @@ header span {
 
 header span section img {
     width: 60%;
+    filter: saturate(10%);
+    transition: filter 0.4s;
+}
+
+header span section img:hover {
+    filter: saturate(80%);
 }
 
 .hidden {
@@ -78,6 +84,46 @@ header nav ul li a {
 header nav ul li a:hover {
     background-color: #FCFCFC;
     border-radius: 10px;
+}
+
+
+/**** HOMEPAGE ****/
+.homepage-about {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:#432143;
+    padding-bottom: 1.8rem;
+    color:#FCFCFC;
+    width: 100vw;
+}
+
+.homepage-about .text-about {
+    max-width: 70vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.homepage-about p {
+    margin: 2rem 0;
+    line-height: 1.4rem;
+    text-align: justify;
+    
+}
+
+.homepage-about a {
+    text-decoration:none;
+    background-color: #FCFCFC;
+    color: #001E2F;
+    padding: .5rem 1rem;
+    border: 1px solid #FCFCFC;
+    border-radius: 10px;
+}
+
+.homepage-about a:hover {
+    background-color: #432143;
+    color: #FCFCFC;
 }
 
 
@@ -139,6 +185,14 @@ header nav ul li a:hover {
 }
 .single-post figure img {
     width: 100%;
+}
+
+
+/**** ABOUT PAGE ****/
+.about {
+    margin: 2rem 0;
+    line-height: 1.4rem;
+    text-align: justify;
 }
 
 

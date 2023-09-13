@@ -23,7 +23,7 @@
             <span>
                 <section>
                     <h1 class="hidden">GETHA</h1> <!-- cacher en css -->
-                    <img src="<?= get_parent_theme_file_uri('assets/images/logo-getha.png');?>" alt="Logo de l'association représentant un homme lançant un crabe dans l'Atlantique (le crabe faisant référence au cancer).">
+                    <img src="<?= get_parent_theme_file_uri('assets/images/logo-GETHA-color.png');?>" alt="Logo de l'association représentant un homme lançant un crabe dans l'Atlantique (le crabe faisant référence au cancer).">
                 </section>
                 <nav>
                     <h2 class="hidden">Menu navigation</h2>
