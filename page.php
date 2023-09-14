@@ -1,7 +1,5 @@
 <?php  
 	$menuItems = getNavigationMenu();
-    $data = getHomepageData();
-	// var_dump($data);
 ?>
 
 <?php get_header();?>
@@ -11,9 +9,8 @@
 		<h3 class="hidden">Texte à propos</h3>
 		<article class="about" id="about">
 			<h2><?php the_title();?></h2>
-			<p>
-				<?= $data['a-propos']['all-content']; ?>
-			</p>
+			
+			<?php the_content(); ?>
 		</article>
 	</section>
 </main>

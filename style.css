@@ -113,7 +113,6 @@ header nav ul li a:hover {
     margin: 2rem 0;
     line-height: 1.4rem;
     text-align: justify;
-    /* background-color: rgba(255,255,255,.1); */
     color: #FCFCFC;
     font-size: 1.1rem;
 }
@@ -135,10 +134,11 @@ header nav ul li a:hover {
 
 /**** POSTS ****/
 .posts {
+    max-width: 70vw;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 2rem 0;
+    margin: 2rem auto;
 }
 
 .posts .post {
@@ -191,6 +191,13 @@ header nav ul li a:hover {
 }
 .single-post figure img {
     width: 100%;
+}
+
+
+/**** EVENTS PAGE ****/
+.list-events {
+    max-width: 70vw;
+    margin: 0 auto;
 }
 
 
