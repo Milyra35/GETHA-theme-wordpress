@@ -4,34 +4,39 @@ Template Name: Actualités
 */
   
 	$menuItems = getNavigationMenu();
-    $posts = getPosts();
-    // var_dump($posts);
+    $thumbnail = get_the_post_thumbnail_url($post);
 ?>
 
 <?php get_header();?>
 
 <main>
-    <h2><?php the_title();?></h2>
-
     <section class="posts">
-        <h3 class="hidden">Tous les articles</h3>
+        <h2><?php the_title();?></h2>
         
         <?php
-            foreach($posts as $item)
-            {
-                $post = $item['data'];
-                $image = $item['image'];
+            $args = array(
+                'post_type' => 'post',
+                'posts_per_page' => -1,
+            );
 
-                echo '
-                    <article class="post">
-                        <h3>'.$post->post_title.'</h3>
-                        <img src='.$image["url"].' alt='.$image['alt'].'>
-                        <p>'.wp_trim_words($post->post_content, 15).'</p>
-                        <p><span>Publié le '.$post->post_date.'</span></p>
-                        <a href="'.$post->guid.'">En savoir plus</a>
-                    </article>
-                ';
-            }
+            $query = new WP_Query($args);
+
+            if($query->have_posts()) : 
+                while($query->have_posts()) : $query->the_post();
+        ?>
+        
+        <article class="post">
+            <h3><?= the_title(); ?></h3>
+            <p><?= wp_trim_words(get_the_content(), 15); ?></p>
+            <p><span>Publié le <?= the_date(); ?></span></p>
+            <a href="<?= the_permalink(); ?>">En savoir plus</a>
+        </article>
+
+        <?php
+                endwhile;
+            else :
+                echo 'Aucun article trouvé';
+            endif;
         ?>
     
     </section>
