@@ -66,7 +66,7 @@ function getPosts()
 {
     $categoryID = get_category_by_slug('TEST')->term_id;
     $arg = [
-        'numberposts' => 5,
+        'numberposts' => 4,
         'category' => $categoryID
     ];
 
