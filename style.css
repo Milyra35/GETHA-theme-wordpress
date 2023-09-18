@@ -35,7 +35,7 @@ main h2 {
 
 /**** HEADER ****/
 header {
-    background-color: #432143;
+    background-color: #ffb703;
 }
 
 header span {
@@ -76,12 +76,13 @@ header nav ul li a {
     margin: 0 1rem;
     padding: 0.6rem 1.2rem;
     text-decoration:none;
-    color: #FCFCFC;
+    color: #001E2F;
     font-size: 1.3rem;
 }
 
 header nav ul li a:hover {
-    background-color: #FC9056;
+    background-color: #023047;
+    color: #FCFCFC;
     border-radius: 10px;
 }
 
@@ -333,7 +334,7 @@ header nav ul li a:hover {
 
 /**** FOOTER ****/
 footer {
-    background-color:#432143;
+    background-color:#ffb703;
     padding: 1rem 0;
 }
 
@@ -349,5 +350,5 @@ footer nav ul {
 
 footer nav ul li a {
     text-decoration:none;
-    color:#FCFCFC;
+    color:#001E2F;
 }
