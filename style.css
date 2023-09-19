@@ -188,6 +188,10 @@ header nav ul li a:hover {
     color:#001E2F;
 }
 
+.homepage-articles > a {
+    background-color: #219EBC;
+}
+
 
 /**** POSTS ****/
 .posts {
