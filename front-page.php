@@ -14,7 +14,7 @@
 		<article class="text-about">
 			<h2><?= $data['a-propos']['titre'];?></h2>
 			<p><?= $data['a-propos']['contenu'];?></p>
-			<a href="<?= $menuItems[3]->url;?>">En savoir plus</a>
+			<a href="<?= $menuItems[5]->url;?>">En savoir plus</a>
 		</article>
 	</section>
 
@@ -34,6 +34,8 @@
 				';
 			}
 		?>
+
+		<a href="<?=$menuItems[1]->url;?>">Voir tous les articles</a>
 	</section>   
 </main>
 
