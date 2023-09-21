@@ -29,7 +29,7 @@ Template Name: Actualités
             <h3><?= the_title(); ?></h3>
             <p><?= wp_trim_words(get_the_content(), 15); ?></p>
             <p><span>Publié le <?= the_date(); ?></span></p>
-            <a href="<?= the_permalink(); ?>">En savoir plus</a>
+            <a href="<?= the_permalink(); ?>">Lire l'article</a>
         </article>
 
         <?php

@@ -139,7 +139,7 @@ header nav ul li a:hover {
     margin: 0 auto;
     display:grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     grid-column-gap: 1rem;
     padding-bottom: 2rem;
 }
@@ -153,6 +153,7 @@ header nav ul li a:hover {
     display:flex;
     flex-direction:column;
     align-items:center;
+    justify-content: space-between;
 }
 
 .homepage-articles article:first-of-type {
@@ -189,7 +190,21 @@ header nav ul li a:hover {
 }
 
 .homepage-articles > a {
+    grid-area: 3/1/4/5;
+    justify-self: center;
+    width: fit-content;
+    margin: 1.5rem 0;
+    text-decoration: none;
+    font-size: 1.2rem;
     background-color: #219EBC;
+    padding: .4rem .8rem;
+    color:#001E2F;
+    border: 1px solid #219EBC;
+    border-radius: 10px;
+}
+
+.homepage-articles > a:hover {
+    background-color: #FCFCFC;
 }
 
 
@@ -241,11 +256,11 @@ header nav ul li a:hover {
 .posts .post a {
     text-decoration: none;
     color: #FCFCFC;
-    background-color:#FC9056;
+    background-color:#023047;
     padding: .5rem 1rem;
     border-radius: 10px;
     text-align: center;
-    border: 1px solid #FC9056;
+    border: 1px solid #023047;
 }
 
 .posts .post a:hover {
