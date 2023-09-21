@@ -20,7 +20,7 @@
                         <a href="mailto:association.getha@gmail.com">Nous contacter</a>
                     </li>
                     <li>
-                        <a href="https://github.com/Milyra35" target="_blank">Marie Richir</a>
+                        <a href="https://github.com/Milyra35" target="_blank">Développeuse : Marie Richir</a>
                     </li>
                 </ul>
             </nav>
