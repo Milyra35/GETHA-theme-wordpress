@@ -2,7 +2,6 @@
 /*
 Template Name: Support
 */
-$documents = getDocuments();
 ?>
 
 <?php get_header();?>
