@@ -36,6 +36,7 @@ main h2 {
 /**** HEADER ****/
 header {
     background-color: #fb8500;
+    box-shadow: 0px 10px 70px 24px rgba(0,0,0,0.2);
 }
 
 header span {
@@ -230,6 +231,7 @@ header nav ul li a:hover {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    background-color: #efefef;
 }
 
 .posts .post:first-of-type {
@@ -289,11 +291,14 @@ header nav ul li a:hover {
 }
 
 .event {
-    width: fit-content;
     margin: 1rem 0;
     padding: 1rem;
     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #efefef;
 }
 
 .event h3 {
@@ -307,13 +312,17 @@ header nav ul li a:hover {
 }
 
 .event a {
-    margin: 1rem 0;
     padding: .4rem .8rem;
     text-decoration: none;
     background-color: #023047;
     color: #FCFCFC;
     border: 1px solid #023047;
     border-radius: 10px;
+}
+
+.event a:hover {
+    background-color: #FCFCFC;
+    color: #001E2F;
 }
 
 
@@ -326,52 +335,23 @@ header nav ul li a:hover {
 }
 
 
-/**** CONTACT FORM ****/
-.contact {
-    display: flex;
-    justify-content:center;
+/**** SUPPORT PAGE ****/
+.support {
+    max-width: 70vw;
+    margin: 2rem auto;
+    line-height: 1.4rem;
+    text-align: justify;
 }
 
-.contact form {
+.support .list-docs {
     display:flex;
-    flex-direction:column;
-    align-items:center;
-    width: 30rem;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
 }
 
-.contact form label {
-    margin: 1rem 0;
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.contact form label input {
-    justify-self: flex-end;
-    padding: .5rem;
-    align-self: flex-end;
-    width: 15rem;
-    border-radius: 10px;
-    border:none;
-    background-color: rgba(0, 0, 0, .1);
-}
-
-.contact form label textarea {
-    padding: .5rem;
-    width: 15rem;
-    border-radius: 10px;
-    border:none;
-    background-color: rgba(0, 0, 0, .1);
-}
-
-.contact form .wpcf7-submit {
-    border:none;
-    background-color: #136B76;
-    padding: .5rem 1rem;
-    border-radius: 10px;
-    color:#FCFCFC;
-    font-size: 1.1rem;
+.support .list-docs .wp-block-file {
+    width: 40%;
+    padding: 2rem 0;
 }
 
 
