@@ -2,6 +2,7 @@
 	$menuItems = getNavigationMenu();
     $data = getHomepageData(); 
 	// var_dump($data['articles']);
+	// var_dump($data['evenements']);
 ?>
 
 
@@ -36,7 +37,22 @@
 		?>
 
 		<a href="<?=$menuItems[1]->url;?>">Voir tous les articles</a>
-	</section>   
+	</section>  
+	
+	<section id="homepage-events" class="homepage-events">
+		<?php
+			foreach($data['evenements'] as $event)
+			{
+				echo '
+					<article>
+						<h3>'.$event->post_title.'</h3>
+						<p>'.$event->event_date.'</p>
+						<a href="'.$event->guid.'">Aller sur la page de l\'évènement</a>
+					</article>
+				';
+			}
+		?>
+	</section>
 </main>
 
 <?php get_footer();?>

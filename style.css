@@ -208,6 +208,13 @@ header nav ul li a:hover {
     background-color: #FCFCFC;
 }
 
+.homepage-events {
+    max-width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 2rem;
+}
+
 
 /**** POSTS ****/
 .posts {
