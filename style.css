@@ -280,7 +280,8 @@ header nav ul li a:hover {
 
 /**** SINGLE POST ****/
 .single-post {
-    margin: 3rem 0;
+    max-width: 70vw;
+    margin: 3rem auto;
 }
 .single-post figure img {
     width: 100%;
@@ -341,6 +342,21 @@ header nav ul li a:hover {
     text-align: justify;
 }
 
+.about section  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about section figure  {
+    width: 20%;
+    padding: .5rem .3rem;
+}
+
+.about section figure image {
+    width: 50%;
+}
+
 
 /**** SUPPORT PAGE ****/
 .support {
@@ -359,6 +375,13 @@ header nav ul li a:hover {
 .support .list-docs .wp-block-file {
     width: 40%;
     padding: 2rem 0;
+}
+
+
+/**** PARTNERS PAGE ****/
+.partners {
+    max-width:70vw;
+    margin: 2rem auto;
 }
 
 
