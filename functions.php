@@ -51,17 +51,6 @@ function getThumbnailUrlAndAlt($post)
     return ['url' => $thumb->guid, 'alt' => $alt];
 }
 
-function getCategory($categories)
-{
-    foreach($categories as $category)
-    {
-        if($category->category_parent != null)
-        {
-            return $category;
-        }
-    }
-}
-
 function getPosts()
 {
     $categoryID = get_category_by_slug('TEST')->term_id;
@@ -78,7 +67,6 @@ function getPosts()
         $articles[] = [
             'data' => $post,
             'image' => getThumbnailUrlAndAlt($post)
-            // 'category' => getCategory(get_the_category($post->ID))->name
         ];
     }
 
