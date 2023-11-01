@@ -40,6 +40,7 @@
 	</section>  
 	
 	<section id="homepage-events" class="homepage-events">
+		<h2>Les derniers évènements</h2>
 		<?php
 			foreach($data['evenements'] as $event)
 			{
