@@ -1,0 +1,22 @@
+/**** TABLET ****/
+@media (min-width: 768px) and (max-width: 1023px) {
+    header span {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header span section img {
+        margin: .6rem 0;
+    }
+
+    header nav ul  {
+        justify-content: center;
+        padding: 0 .5rem;
+    }
+}
+
+
+/**** MOBILE ****/
+@media (max-width: 767px) {
+
+}
