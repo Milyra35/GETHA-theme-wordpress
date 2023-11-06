@@ -1,0 +1,38 @@
+/**** EVENTS PAGE ****/
+.list-events h2 {
+    text-align:center;
+}
+
+.event {
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #efefef;
+}
+
+.event h3 {
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.event p {
+    font-style:italic;
+    margin: .8rem 0;
+}
+
+.event a {
+    padding: .4rem .8rem;
+    background-color: #023047;
+    color: #FCFCFC;
+    border: 1px solid #023047;
+    border-radius: 10px;
+}
+
+.event a:hover {
+    background-color: #FCFCFC;
+    color: #001E2F;
+}

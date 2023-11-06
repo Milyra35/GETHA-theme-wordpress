@@ -10,7 +10,7 @@ Template Name: Actualités
 <?php get_header();?>
 
 <main>
-    <section class="posts">
+    <article class="container posts">
         <h2><?php the_title();?></h2>
         
         <?php
@@ -25,12 +25,12 @@ Template Name: Actualités
                 while($query->have_posts()) : $query->the_post();
         ?>
         
-        <article class="post">
+        <section class="post">
             <h3><?= the_title(); ?></h3>
             <p><?= wp_trim_words(get_the_content(), 15); ?></p>
             <p><span>Publié le <?= the_date(); ?></span></p>
             <a href="<?= the_permalink(); ?>">Lire l'article</a>
-        </article>
+        </section>
 
         <?php
                 endwhile;
@@ -39,7 +39,7 @@ Template Name: Actualités
             endif;
         ?>
     
-    </section>
+        </article>
 
 </main>
 

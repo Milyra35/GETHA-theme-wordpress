@@ -7,7 +7,7 @@ Template Name: Support
 <?php get_header();?>
 
 <main>
-	<article class="support">
+	<article class="container support">
 		<h2><?php the_title();?></h2>
 
         <section class="list-docs">

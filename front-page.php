@@ -19,7 +19,7 @@
 		</article>
 	</section>
 
-	<section id="homepage-articles" class="homepage-articles">
+	<section id="homepage-articles" class="container homepage-articles">
 		<h2>Quelques articles</h2>
 		
 		<?php
@@ -39,7 +39,7 @@
 		<a href="<?=$menuItems[1]->url;?>">Voir tous les articles</a>
 	</section>  
 	
-	<section id="homepage-events" class="homepage-events">
+	<section id="homepage-events" class="container homepage-events">
 		<h2>Les derniers évènements</h2>
 		<?php
 			foreach($data['evenements'] as $event)

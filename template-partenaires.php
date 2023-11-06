@@ -9,7 +9,7 @@ Template Name: Partenaires
 <?php get_header();?>
 
 <main>
-    <article class="partners">
+    <article class="container partners">
         <h2><?php the_title();?></h2>
         <p>Nous tenons remercier nos partenaires pour leur aide :</p>
         <section>

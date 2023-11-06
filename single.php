@@ -8,7 +8,7 @@ $thumbnail = get_the_post_thumbnail_url($post);
 <?php get_header();?>
 
 <main>
-	<article class="single-post">
+	<article class="container single-post">
 		<figure>
 			<img src="<?= $thumbnail;?>" alt=""/>
 		</figure>

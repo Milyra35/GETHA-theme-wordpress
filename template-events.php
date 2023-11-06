@@ -8,7 +8,7 @@ $events = getEvents();
 <?php get_header();?>
 
 <main>
-	<section class="list-events">
+	<section class="container list-events">
 		<h2><?php the_title();?></h2>
 
 		<p>

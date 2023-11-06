@@ -5,7 +5,7 @@
 <?php get_header();?>
 
 <main>
-	<section class="background">
+	<section class="container background">
 		<h3 class="hidden">Texte à propos</h3>
 		<article class="about" id="about">
 			<h2><?php the_title();?></h2>
