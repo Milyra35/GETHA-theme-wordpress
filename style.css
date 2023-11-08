@@ -8,7 +8,6 @@ Author URI: github.com/Milyra35
   
 */
 
-@import url('assets/css/media-queries.css');
 @import url('assets/css/posts.css');
 @import url('assets/css/events.css');
 
@@ -137,6 +136,7 @@ header nav ul li a:hover {
     padding: .5rem 1rem;
     border: 1px solid #FCFCFC;
     border-radius: 10px;
+    margin-bottom: .4rem;
 }
 
 .homepage-about a:hover {
@@ -285,6 +285,10 @@ header nav ul li a:hover {
     text-align: justify;
 }
 
+.support h2 {
+    text-align: center;
+}
+
 .support .list-docs {
     display:flex;
     flex-wrap:wrap;
@@ -298,6 +302,10 @@ header nav ul li a:hover {
 
 
 /**** PARTNERS PAGE ****/
+.partners h2 {
+    text-align: center;
+}
+
 .partners section  {
     margin-top: 2rem;
     display: flex;
@@ -331,8 +339,8 @@ footer nav ul li a {
 }
 
 
-/**** TABLET ****/
-@media (min-width: 768px) and (max-width: 1023px) {
+/**** MEDIA QUERIES FOR TABLET ****/
+@media (max-width: 1023px) {
     header span {
         flex-direction: column;
         align-items: center;
@@ -348,10 +356,119 @@ footer nav ul li a {
 
     header span > .hidden {
         display: block;
+        font-size: 1.4rem;
+        padding: .6rem 0;
     }
 
     header span nav ul {
         flex-direction:column;
         align-items: center;
+    }
+
+    header span nav ul li {
+        margin: .6rem 0;
+    }
+
+    header span nav ul li a {
+        padding: 0.4rem .8rem;
+    }
+
+    /**** MAIN ****/
+    .container {
+        max-width: 90vw;
+    }
+
+    .homepage-articles {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .homepage-articles h2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .homepage-articles article {
+        width: 40%;
+        margin: .4rem 0;
+    }
+
+    .homepage-articles > a {
+        flex-basis: 100%;
+        text-align: center;
+        width: fit-content;
+    }
+
+    /**** POSTS ****/
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .posts h2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .posts .post {
+        width: 45%;
+    }
+
+
+    /**** FOOTER ****/
+    footer nav ul {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer nav ul li {
+        margin: .3rem 0;
+        text-align: center;
+    }
+}
+
+
+/**** MOBILE ****/
+@media (max-width: 767px) {
+    .container {
+        max-width: 95vw;
+    }
+    
+    /**** MAIN ****/
+    .homepage-articles {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .homepage-articles article {
+        width: 80%;
+        margin: .4rem 0;
+    }
+
+    /**** POSTS PAGE ****/
+    .posts {
+        justify-content: center;
+    }
+
+    .posts .post {
+        width: 90%;
+    }
+
+    /**** PARTNERS PAGE ****/
+    .partners section {
+        justify-content: center;
+    }
+
+    /**** SUPPORT PAGE ****/
+    .support .list-docs {
+        justify-content: center;
+    }
+
+    .support .list-docs .wp-block-file {
+        width: 90%;
     }
 }
