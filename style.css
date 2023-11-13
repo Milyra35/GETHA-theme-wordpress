@@ -30,6 +30,7 @@ main h2 {
     font-size:1.8rem;
     margin: 2.5rem 0;
     font-weight: 500;
+    text-align: center;
 }
 
 main h3 {
@@ -46,6 +47,11 @@ a {
     text-decoration: none;
 }
 
+strong {
+    font-weight: bold;
+}
+
+
 /**** HEADER ****/
 header {
     background-color: #fb8500;
@@ -61,7 +67,7 @@ header span {
 }
 
 header span section img {
-    width: 70%;
+    width: 6rem;
     filter: saturate(10%);
     transition: filter 0.4s;
 }
@@ -86,8 +92,8 @@ header nav ul {
 }
 
 header nav ul li a {
-    margin: 0 .7rem;
-    padding: 0.6rem 1rem;
+    margin: 0 .6rem;
+    padding: 0.4rem .6rem;
     color: #001E2F;
     font-size: 1.3rem;
 }
@@ -156,7 +162,6 @@ header nav ul li a:hover {
 
 .homepage-articles h2 {
     grid-area: 1/1/2/5;
-    text-align:center;
 }
 
 .homepage-articles article {
@@ -226,10 +231,6 @@ header nav ul li a:hover {
     padding-bottom: 2rem;
 }
 
-.homepage-events h2 {
-    text-align: center;
-}
-
 .homepage-events article {
     width: fit-content;
     margin: 1rem 0;
@@ -285,10 +286,6 @@ header nav ul li a:hover {
     text-align: justify;
 }
 
-.support h2 {
-    text-align: center;
-}
-
 .support .list-docs {
     display:flex;
     flex-wrap:wrap;
@@ -302,9 +299,6 @@ header nav ul li a:hover {
 
 
 /**** PARTNERS PAGE ****/
-.partners h2 {
-    text-align: center;
-}
 
 .partners section  {
     margin-top: 2rem;
@@ -315,6 +309,13 @@ header nav ul li a:hover {
 
 .partners section figure {
     width: 12rem;
+}
+
+
+/**** LEGAL NOTICES ****/
+.legal h3 {
+    font-weight: bolder;
+    margin-top: 1.2rem;
 }
 
 

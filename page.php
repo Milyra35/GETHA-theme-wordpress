@@ -5,14 +5,14 @@
 <?php get_header();?>
 
 <main>
-	<section class="container background">
-		<h3 class="hidden">Texte à propos</h3>
-		<article class="about" id="about">
+	<article class="container background">
+		<h2 class="hidden">Texte à propos</h3>
+		<section class="about legal" id="about">
 			<h2><?php the_title();?></h2>
 			
 			<?php the_content(); ?>
-		</article>
-	</section>
+		</section>
+	</article>
 </main>
 
 <?php get_footer();?>
