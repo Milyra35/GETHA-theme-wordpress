@@ -10,6 +10,7 @@ $items = getSupportMenu()
 <main>
 	<article class="container support">
 		<h2><?php the_title();?></h2>
+        <ul>
 
         <?php
             if(is_page('Support'))
@@ -17,15 +18,15 @@ $items = getSupportMenu()
                 foreach($items as $item)
                 {
         ?>
-
-        <ul>
+        
             <li><a href="<?= $item->url;?>"><?= $item->title;?></a></li>
-        </ul>
-
+            
         <?php
                 }
             }
         ?>
+        
+        </ul>
     </article>
 </main>
 
