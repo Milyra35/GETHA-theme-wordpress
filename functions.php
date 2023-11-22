@@ -23,6 +23,13 @@ function getNavigationMenu()
     return $items;
 }
 
+function getSupportMenu()
+{
+    $items = wp_get_nav_menu_items('Supports');
+
+    return $items;
+}
+
 function getFooterMenu()
 {
     $items = wp_get_nav_menu_items('Footer');
