@@ -59,6 +59,11 @@
 
 
 /**** SINGLE POST ****/
+.single-post figure {
+    display:flex;
+    justify-content:center;
+    padding: .8rem;
+}
 
 .single-post figure img {
     width: 60%;

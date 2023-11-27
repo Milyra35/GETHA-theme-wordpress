@@ -9,9 +9,9 @@ $thumbnail = get_the_post_thumbnail_url($post);
 
 <main>
 	<article class="container single-post">
-		<figure>
+		<!-- <figure>
 			<img src="<?= $thumbnail;?>" alt=""/>
-		</figure>
+		</figure> -->
 		<section>
 			<h2><?= $post_title;?></h2>
 			<?php
